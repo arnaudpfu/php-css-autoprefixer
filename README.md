@@ -51,7 +51,7 @@ Into this one :
 
 **Warning**:
 - This plugin class doesn't support the @media and all the other CSS Rules (except @keyframes)
-- You have to minify your CSS before the compilation
+- You must minify your CSS before compilation.
 
 You can submit an pull request request if you are interested in any of these features.
 
