@@ -164,6 +164,16 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		}
 
 		/**
+		 * Add css properties to the all_support array
+		 *
+		 * @param array $properties An array of CSS properties in kebab case.
+		 * @return void
+		 */
+		public function add_all_support( $properties ) {
+			$this->all_support = $this->array_push_all_if_not_inside( $this->all_support, $properties );
+		}
+
+		/**
 		 * Add css properties to the webkit_support array
 		 *
 		 * @param array $properties An array of CSS properties in kebab case.
