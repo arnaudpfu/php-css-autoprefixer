@@ -361,6 +361,8 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 				$prefixed_property['prefixed'] = $this->check_specific_support( $prefixed_property['prefixed'] );
 			}
 
+			$prefixed_property['prefixed'] = array_reverse( $prefixed_property['prefixed'] );
+
 			return $prefixed_property;
 		}
 
