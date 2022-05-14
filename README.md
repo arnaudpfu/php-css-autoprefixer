@@ -75,7 +75,7 @@ There is 5 methods to do this :
 
 You can get a support list with a getter functions such as : `get_webkit_support();`
 
-### Example showing how add custom supported properties
+### Example showing how to add custom supported properties
 
 ```php
 $css = '.myclass{color:red;clip-path:var(--primary);transition-duration:3s;}@keyframes nameAnim{0%,100%{column-gap:5px;}}';
