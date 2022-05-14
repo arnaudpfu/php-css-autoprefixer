@@ -10,7 +10,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 	/**
 	 * Enable to autoprefix CSS
 	 *
-	 * @version 5.8.1
 	 */
 	class CSS_Autoprefixer {
 
@@ -81,7 +80,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		/**
 		 * Compile CSS
 		 *
-		 * @version 5.8.1
 		 * @param string $unprefixed_css unprefixed CSS code.
 		 * @return string minified and prefixed CSS
 		 */
@@ -100,7 +98,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		/**
 		 * Gather CSS
 		 *
-		 * @version 5.8.1
 		 * @param array $parsed_css array of CSS_Section.
 		 * @return string minified and prefixed CSS
 		 */
@@ -119,7 +116,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		/**
 		 * Gather CSS section
 		 *
-		 * @version 5.8.1
 		 * @param CSS_Section $css_section prefixed CSS.
 		 * @return string minified and prefixed CSS
 		 */
@@ -157,7 +153,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		/**
 		 * Gather CSS properties
 		 *
-		 * @version 5.8.1
 		 * @param array $css_properties prefixed CSS.
 		 * @return string minified and prefixed CSS
 		 */
@@ -176,7 +171,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		/**
 		 * Prefix CSS
 		 *
-		 * @version 5.8.1
 		 * @param array $css_sections array of CSS_Section.
 		 * @return array prefixed CSS_Section
 		 */
@@ -207,7 +201,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		/**
 		 * Prefix CSS properties
 		 *
-		 * @version 5.8.1
 		 * @param array $properties parsed CSS properties.
 		 * @return array prefixed CSS properties
 		 */
@@ -226,7 +219,6 @@ if ( ! class_exists( 'CSS_Autoprefixer' ) ) {
 		/**
 		 * Prefix a CSS property
 		 *
-		 * @version 5.8.1
 		 * @param array $property parsed CSS property.
 		 * @return array prefixed CSS property
 		 */

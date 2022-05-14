@@ -5,14 +5,11 @@
  * Enable to create sorted CSS section.
  */
 
-defined( 'ABSPATH' ) || exit;
-
 if ( ! class_exists( 'CSS_Section' ) ) {
 
 	/**
 	 * Enable to autoprefix CSS
 	 *
-	 * @version 5.8.1
 	 */
 	class CSS_Section {
 
