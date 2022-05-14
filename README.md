@@ -20,7 +20,7 @@ You can easily turn this code :
 
 ```
 
-To this one :
+Into this one :
 
 ```css
 .myclass {
