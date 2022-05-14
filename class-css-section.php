@@ -72,7 +72,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param string $css_text_section text.
 		 * @return string only content
 		 */
-		public function extract_content( $css_text_section ) {
+		private function extract_content( $css_text_section ) {
 			return substr( $css_text_section, strpos( $css_text_section, '{' ) + 1, -1 );
 		}
 
@@ -82,7 +82,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param string $selector of the section.
 		 * @return string animation | style
 		 */
-		public function define_type( $selector ) {
+		private function define_type( $selector ) {
 			return substr( $selector, 0, strlen( '@keyframes ' ) ) === '@keyframes ' ? 'animation' : 'style';
 		}
 
@@ -92,7 +92,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param string $css_text_section of the section.
 		 * @return string selector
 		 */
-		public function extract_selector( $css_text_section ) {
+		private function extract_selector( $css_text_section ) {
 			$selector = substr( $css_text_section, 0, strpos( $css_text_section, '{' ) );
 			return empty( $selector ) ? null : $selector;
 		}
@@ -103,7 +103,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param string $css code.
 		 * @return array
 		 */
-		public function sort_positions( $css ) {
+		private function sort_positions( $css ) {
 
 			$sorted_positions   = array();
 			$css                = substr( $css, -1 ) !== '}' ? $css . '}' : $css;
@@ -129,7 +129,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param string $css keyframes.
 		 * @return array
 		 */
-		public function split_keyframes( $css ) {
+		private function split_keyframes( $css ) {
 			return preg_split( '/(?<=\})(?=\s*[0-9]+\s*%(?:(?:\s*,\s*[0-9]+\s*%)|)\s*\{)/', $css );
 		}
 
@@ -139,7 +139,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param string $css code.
 		 * @return array
 		 */
-		public function sort_properties( $css ) {
+		private function sort_properties( $css ) {
 
 			$sorted_properties   = array();
 			$css                 = substr( $css, -1 ) !== ';' ? $css . ';' : $css;
@@ -165,7 +165,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param string $css_properties grouped.
 		 * @return array
 		 */
-		public function split_properties( $css_properties ) {
+		private function split_properties( $css_properties ) {
 			return preg_split( '/(?<=;)/', $css_properties );
 		}
 
@@ -175,7 +175,7 @@ if ( ! class_exists( 'CSS_Section' ) ) {
 		 * @param array $array haystack.
 		 * @return array
 		 */
-		public function remove_empty_elements( $array ) {
+		private function remove_empty_elements( $array ) {
 			return array_filter(
 				$array,
 				function( $value ) {
